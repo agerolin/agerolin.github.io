@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+
+
+<head>
+  <meta charset="utf-8"/>
+  <script src="../shared/phaser-ce/phaser.min.js"></script>
+  <script src="../shared/debug.js"></script>
+  <script src="./IModel.js"></script>
+  <script src="./IIntegrator.js"></script>
+  <script src="./IntegratorRK4.js"></script>
+  <script src="./IntegratorRK5.js"></script>
+  <script src="./IntegratorADB5.js"></script>
+  <script src="./ModelMagPend.js"></script>
+  <script src="./MagPend.js"></script>
+</head>
+
+<body>
+
+
+<h1>
+Magnetic pendulum</h1><br>
+Magnetic pendulum consists of a body X attached to a pendulum that is free to move in two dimensions. The body in the pendulum is acted by the force of gravity and is in addition attracted due to three magnets B,G and R that are located on the floor below the pendulum in such a way that they form an equilateral triangle.
+<br>
+We start the pendulum at various initial positions. The pendulum is at still in the moment it is released. After the release it will swing according to the net force produced by the gravity and the magnetical attraction. Due to the friction, pendulum will lose steadily its kinetic energy as it swings and the swinging will slow down. The mass of the body X is designed light enough so that in the end X will converge on vicinity of one of the magnets, i.e., the magnetic force dominates over the gravity. 
+<br>
+All the above is simple and clear. But we notice that given the initial position of X, it is not easy to predict above which magnet the path of the pendulum will end. Actually, if we don't start in immediate vicinity of one of the magnets, the tiniest change of the initial position of the pendulum can cause the body X to take a totally different path and end on top of a different magnet. The system is of course deterministic: no randomness has a role in determining the path that the pendulum will take. In theory, mathematically expressed laws of physics will exactly tell above which magnet the pendulum will end, given the initial position. But in practise, around the starting locations where the system is extremely sensitive to the initial conditions, it might be impossible to measure and adjust the initial position accurately enough to make the pendulum stop above the magnet we want. This is a fundamental property of chaos.
+<br>
+In the simulation below, the pendulum is pictured from above. Using the mouse you can choose a starting position on the pendulum, and the simulation will show the path the pendulum takes from there. For every pixel of the simulation, the colour of the pixel indicates at which magnet the pendulum will stop. The brightness of the colour indicates the length of the corresponding path: the darker the pixel, the longer will be the path.
+<br>
+<br>
+<i>Additional reading:</i>
+<ul>
+<li>
+<a href="http://beltoforion.de/article.php?a=magnetic_pendulum">beltoforion.de -- Understanding the world through coding</a>
+ (This is where the simulation is from)
+</li>
+</ul>
+
+
+<table style="width: 100%">
+    <colgroup>
+       <col span="1" style="width: 50%;">
+       <col span="1" style="width: 50%;">
+    </colgroup>
+    
+    <!-- Put <thead>, <tbody>, and <tr>'s here! -->
+    <tbody>
+ <tr>
+ <td valign="top">
+
+  <div id="cv" class="phaser_div">
+
+  </div>
+  <div>
+    <div style="width:60px; float:left; text-align:center; margin:10px;">Friction:</div>
+    <div style="width:50px; float:left; text-align:center; margin:10px;">Low</div>
+    <input id="sliderFriction" type="range" min="0" max="100" style="width:300px; height:20px; float:left; margin:10px;" onchange="updateFrictionSlider(this.value)"/> 
+    <div style="width:50px; float:left; text-align:center; margin:10px;">High</div>
+    <div id="frictionValue" style="float:left; text-align:center; margin:10px;">xxxx</div>
+  </div>
+<!--
+  <div style="clear:both;">
+    <div style="width:100px; float:left; text-align:center; margin:10px;">Weak</div>
+    <input id="sliderStrength" type="range" min="0" max="100" style="width:300px; height:20px; float:left; margin:10px;" onchange="updateStrengthSlider(this.value)"/> 
+    <div style="width:100px; float:left; text-align:center; margin:10px;">Strong</div>
+  </div>
+  <div id="strengthValue" style="float:left; text-align:center; margin:10px;">yyyy</div>  
+-->
+  <script>
+    var magpend = new MagPend({ assetpath     : "",
+                             cvid          : 'cv',
+                             font          : "24px Arial",
+                             width         : 600,
+                             height        : 600});
+    let sliderDiv = document.getElementById("frictionValue");
+    sliderDiv.innerHTML = magpend.model.friction.toPrecision(2);
+    
+    function updateFrictionSlider(v) {
+      let friction = Math.pow(10, -3.5 + (v/100) * 1.5);
+      magpend.setFriction(friction);
+      let sliderDiv = document.getElementById("frictionValue");
+      sliderDiv.innerHTML = friction.toPrecision(2);
+    }
+    function updateStrengthSlider(v) {
+      let friction = Math.pow(10, -6 + (v/100) * 1.5);
+      magpend.setStrength(friction);
+      let sliderDiv = document.getElementById("strengthValue");
+      sliderDiv.innerHTML = friction.toPrecision(2);
+    }
+  </script>
+</td>
+<td>
+
+<img src="kuva.jpg" alt="[Hand-drawn picture];" style="float: center" width="80%"/>
+
+</td>
+</tr>
+</table>
+
+</body>
+</html>

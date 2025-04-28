@@ -1,0 +1,1121 @@
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112073692-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-112073692-1');
+</script>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	
+    
+	<title>Augusto Gerolin :: Academic Webpage</title>
+
+	<link rel="shortcut icon" href="assets/images/topicon.png">
+	
+	<!-- Bootstrap -->
+	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+	<!-- Icon font -->
+	<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<!-- Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/agency.min.css">
+	
+	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
+</head>
+
+<script type="text/javascript" src="fusioncharts/fusioncharts.js"></script>
+<script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.fint.js"></script>
+<script type="text/javascript">
+  FusionCharts.ready(function () {
+    var airportsMap = new FusionCharts({
+        type: 'maps/world',
+        renderAt: 'chart-container',
+        width: '720',
+        height: '480',
+        dataFormat: 'json',
+        dataSource: {
+            "chart": {
+                "theme": "fint",
+                "markerBgColor" : "#363151",
+                
+                "entityFillColor" : "#f1e8df",
+                "entityFillHoverColor" : "#f1e8df",
+                "showMarkerLabels": "1",
+                "showvalue" : "0",
+                "labsepchar" : "<br/>",
+                "markerTooltext":"$label",
+                "numbersuffix":"M"
+                    },
+            "markers": {
+            "items" : [
+            {
+                "id":"lon",
+                "shapeid": "circle",
+				"radius":'4',
+                "x": "340.23",
+                "y": "125.9",
+                "label": "",
+                "value": "",
+                
+                "tooltext": "Johannes Zimmer (Bath)",
+               
+                "labelpos": "left"
+            },
+			{
+                "id":"ams",
+                "shapeid": "circle",
+				"radius":'4',
+                "x": "355.23",
+                "y": "125.9",
+                "label": "",
+				"tooltext": "Paola Gori-Giorgi (Amsterdam)<br> Klaas Giesbertz<br> Timothy J. Daas <br> Stefan Vuckovic",
+                "value": "",     
+                "labelpos": "top"
+            },
+            {
+                "id": "tor",
+                "shapeid": "circle",
+				"radius":'4',
+                "x": "180.14",
+                "y": "137",
+                "label": "",
+                "value": "",
+                "tooltext": "Chris Finlay (Montréal)",
+                "labelpos": "bottom"
+            },
+			{
+                "id": "nyc",
+                "shapeid": "circle",
+				"radius":'4',
+                "x": "180.14",
+                "y": "160.9",
+                "label": "",
+                "value": "",
+                "tooltext": "Aram Pooladian (New York)",
+                "labelpos": "bottom"
+            },
+			{
+                "id": "mer",
+                "shapeid": "circle",
+				"radius":'4',
+                "x": "80.14",
+                "y": "160",
+                "label": "",
+                "value": "",
+                "tooltext": "Juri Grossi (Merced)",
+                "labelpos": "bottom"
+            },	
+			{
+                "id": "chi",
+                "shapeid": "circle",
+				"radius":'4',
+                "x": "190.14",
+                "y": "330",
+                "label": "",
+                "value": "",
+                "tooltext": "Mircea Petrache (Santiago)",
+                "labelpos": "bottom"
+            },	
+			{
+                "id": "la",
+                "shapeid": "circle",
+				"radius":'4',
+                "x": "90.14",
+                "y": "170",
+                "label": "",
+                "value": "",
+                "tooltext": "Guido Montúfar (LA / Leipzig)",
+                "labelpos": "bottom"
+            },
+            {
+                "id": "pis",
+                "shapeid": "circle",
+				"radius":'4',
+                "x": "368.14",
+                "y": "156.9",
+                "label": "",
+                "value": "",
+                "tooltext": "Giuseppe Buttazzo (Pisa)<br> Simone Di Marino (Genova)<br> Anna Kausamo (Firenze)<br> Bozhidar Velichkov (Pisa)<br> Stefan Vuckovic (Lecce/Amsterdam)",
+                "labelpos": "bottom"
+            },
+            {
+                "id": "fin",
+                "shapeid": "circle",
+				"radius":'4',
+                "x": "395.23",
+                "y": "90.9",
+                "label": "",
+                "value": "",
+                "tooltext": "Anton Mallasto (AI, Helsinki)<br> Tapio Rajala (Jyväskylä)<br> Robert van Leeuwen (Physics, Jyväskylä)<br>",
+                "labelpos": "top"
+            },
+			            
+			{
+                "id": "jpa",
+                "shapeid": "circle",
+				"radius":'4',
+                "x": "625.23",
+                "y": "160.9",
+                "label": "",
+                "value": "",
+                "tooltext": "Ha Quang Minh (AI, Tokyo)",
+                "labelpos": "top"
+            },
+            {
+                "id": "par",
+                "shapeid": "circle",
+				"radius":'4',
+                "x": "348.14",
+                "y": "134.9",
+				  "label": "",
+                "value": "",
+                "tooltext": "Luca Nenna (Paris)",
+                "labelpos": "right"
+            },
+			  {
+                "id": "ger",
+                "shapeid": "circle",
+				"radius":'4',
+                "x": "358.14",
+                "y": "138.9",
+				  "label": "",
+                "value": "",
+                "tooltext": "Hilke Bahmann (Wuppertal)<br> Guido Montúfar (LA / Leipzig)<br> Gero Friesecke (Munich)<br> Lorenzo Portinale (Bonn)<br> Michael Seidl (Regensburg)",
+                "labelpos": "right"
+            },
+						            {
+                "id": "aus",
+                "shapeid": "circle",
+				"radius":'4',
+                "x": "368.14",
+                "y": "145.9",
+				  "label": "",
+                "value": "",
+                "tooltext": "Dario Feliciangeli (Vienna)",
+                "labelpos": "right"
+            }
+			
+
+            ]
+
+                }
+            }
+    }).render();
+});
+</script>
+
+
+
+<body>
+
+
+<header id="header">
+	<div id="head" class="parallax" parallax-speed="1">
+		<h1 id="logo" class="text-center">
+			<span class="title">AI and Quantum</span>
+			<span class="tagline">at the interface of Chemistry and Mathematics</span>
+		</h1>
+	</div>
+
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			</div>
+			
+			<div class="navbar-collapse collapse">
+				
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+                    <li><a href="research.php">Research</a></li>
+                    <li><a href="teaching.html">Teaching</a></li>
+                     <li><a href="papers.php">Papers</a></li>
+                    <li><a href="outreach.html">Outreach Sciences</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+				</ul>
+			
+			</div><!--/.nav-collapse -->			
+		</div>	
+	</nav>
+</header>
+
+<main id="main">
+
+	<div class="container">
+
+		<div class="row topspace">
+			
+
+			
+			
+			<!-- Article main content -->
+			<article class="col-sm-14 maincontent">
+
+				        <!-- Team-->
+<header class="page-header">
+			<h1 class="page-title">Our Team</h1>
+</header>
+				
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="team-member">
+                            <div class="timeline-image">
+							<a href="https://science.uottawa.ca/mathstat/en/people/gerolin-augusto" target="_new"><img class="mx-auto rounded-circle" src="assets/images/team/augusto.jpg" alt="..." /></a>
+                            <h4>Augusto Gerolin</h4>
+                            <p class="text-muted"> CRC in AI at Math &amp; Chemistry<br> 
+                          Assistant professor</p>
+                        </div>
+                    </div>
+		</div>
+                    
+   
+
+        <div class="col-lg-3">
+                        <div class="team-member">
+                            <div class="timeline-image">
+                            <img class="mx-auto rounded-circle" src="assets/images/team/elitta.png" alt="..." />
+                            <h4>Elitta Khoury</h4>
+                            <p class="text-muted">Lab Manager<br> 
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="team-member">
+                            <div class="timeline-image">
+                            <img class="mx-auto rounded-circle" src="assets/images/team/sumiya.jpg" alt="..." />
+                            <h4>Sumiya Baasandorj</h4>
+                            <p class="text-muted">Postdoctoral Researcher<br> 
+                            Mathematics, with SNS Pisa </p>
+                        </div>
+                    </div>
+                    </div>
+
+			<div class="col-lg-3">
+                        <div class="team-member">
+                            <div class="timeline-image">
+                            <img class="mx-auto rounded-circle" src="assets/images/team/maaj.jpg" alt="..." />
+                            <h4>Mohammad Ahmadpoor</h4>
+                            <p class="text-muted">Postdoctoral Researcher<br> 
+                            Mathematics, with NRC </p>
+                        </div>
+                    </div>
+                    </div>
+
+
+                    </div>
+
+<div class="row">
+
+		<div class="col-lg-3">
+                        <div class="team-member">
+                            <div class="timeline-image">
+                            <img class="mx-auto rounded-circle" src="assets/images/team/michelle.jpg" alt="..." />
+                            <h4>Michelle Richer</h4>
+                            <p class="text-muted">Postdoctoral Researcher<br> 
+                            Chemistry </p>
+                        </div>
+                    </div>
+                    </div>
+
+
+					<div class="col-lg-3">
+                        <div class="team-member">
+                            <div class="timeline-image">
+                            <img class="mx-auto rounded-circle" src="assets/images/team/zak.jpg" alt="..." />
+                            <h4>Zak Brannan</h4>
+                            <p class="text-muted">PhD student <br> 
+                            Mathematics and AI </p>
+                        </div>
+                    </div>
+                    </div>
+
+
+
+ 			  <div class="col-lg-3">
+<div class="team-member">
+    <div class="timeline-image">
+    <img class="mx-auto rounded-circle" src="assets/images/team/alex.png" alt="..." />
+                    <h4>Alex Dzhenzherov</h4>
+                    <p class="text-muted">PhD student<br> 
+                      Quantum Information Theory<br></p>
+                    </div>
+                    </div>
+</div>
+
+
+    <div class="col-lg-3">
+                  <div class="team-member">
+<div class="timeline-image">
+<img class="mx-auto rounded-circle" src="assets/images/team/Zhiyi.jpg" alt="..." />
+                    <h4>Zhiyi Lin</h4>
+                    <p class="text-muted">PhD student<br> 
+                      Mathematics and Quantum Physics</p>
+                    </div>
+                    </div>
+				</div>
+
+
+                </div>
+
+<div class="row">
+
+                    <div class="col-lg-3">
+                        <div class="team-member">
+                        <div class="timeline-image">
+                            <img class="mx-auto rounded-circle" src="assets/images/team/monina.jpg" alt="..." />
+                        <h4>Nataliia Monina</h4>
+                        <p class="text-muted">PhD student <br> 
+                          Math &amp; Quantum Chemistry</p>
+                        </div>
+                    </div>
+                    </div>
+
+
+		
+
+
+ 
+
+
+
+
+
+					
+		<div class="col-lg-3">
+                  <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/images/team/pavlo.jpg" alt="..." />
+                    <h4>Pavlo Pelikh</h4>
+                    <p class="text-muted">PhD student&nbsp;&nbsp; <br> 
+                      OT &amp; Machine Learning</p>
+                    </div>
+                    </div>
+		 
+
+                    <div class="col-lg-3">
+                        <div class="team-member">
+                            <div class="timeline-image">
+                            <img class="mx-auto rounded-circle" src="assets/images/team/denis.jpg" alt="..." />
+                            <h4>Denys Ruban</h4>
+                            <p class="text-muted">PhD student<br> 
+                            Mathematics and AI </p>
+                        </div>
+                    </div>
+                    </div>
+
+
+
+
+
+ 			  <div class="col-lg-3">
+<div class="team-member">
+    <div class="timeline-image">
+    <img class="mx-auto rounded-circle" src="assets/images/team/mariam.png" alt="..." />
+                    <h4>Mariam Elsayed</h4>
+                    <p class="text-muted">MSc student<br> 
+                      Data Sciences and Statistics<br></p>
+                    </div>
+                    </div>
+</div>
+
+
+				
+                  
+               
+   
+  
+         
+    
+
+</div>
+
+<div class="row">
+
+
+<div class="col-lg-3">
+         <div class="team-member">
+             <div class="timeline-image">
+             <img class="mx-auto rounded-circle" src="assets/images/team/ivan.jpg" alt="..." />
+             <h4>Ivan Zhytkevych</h4>
+             <p class="text-muted">MSc student<br> 
+             Mathematics and AI </p>
+         </div>
+     </div>
+     </div>
+
+
+     <div class="col-lg-3">
+<div class="team-member">
+<div class="timeline-image">
+<img class="mx-auto rounded-circle" src="assets/images/team/mairi.png" alt="..." />
+     <h4>Mairi Hallman</h4>
+     <p class="text-muted">MSc student <br> 
+       Stats and Machine Learning<br></p>
+     </div>
+     </div>
+</div>
+
+<div class="col-lg-3">
+<div class="team-member">
+<div class="timeline-image">
+<img class="mx-auto rounded-circle" src="assets/images/team/hossein.png" alt="..." />
+     <h4>Hossein Hajmirbaba</h4>
+     <p class="text-muted">Undergraduate student<br> 
+       CS and Quantum<br></p>
+     </div>
+     </div>
+</div>
+
+
+
+<div class="col-lg-3">
+<div class="team-member">
+<div class="timeline-image">
+<img class="mx-auto rounded-circle" src="assets/images/team/rachel.png" alt="..." />
+     <h4>Rachel Love</h4>
+     <p class="text-muted">Visiting Undergraduate student<br> 
+       Math and Machine Learning<br></p>
+     </div>
+     </div>
+
+
+
+     
+
+
+</div>
+
+<div class="row">
+
+
+           	<div class="col-lg-3">
+                        <div class="team-member">
+                            <div class="timeline-image">
+                            <img class="mx-auto rounded-circle" src="assets/images/team/iryna.png" alt="..." />
+                            <h4>Iryna Voitsitska                            </h4>
+                            <p class="text-muted">UCU, Lviv<br> 
+                            (with Rostyslav Hryniv) </p>
+                        </div>
+                    </div>
+                    </div>
+
+
+                    <div class="col-lg-3">
+<div class="team-member">
+    <div class="timeline-image">
+    <img class="mx-auto rounded-circle" src="assets/images/team/maksym.png" alt="..." />
+                    <h4>Maksym Zhuk</h4>
+                    <p class="text-muted">UCU, Lviv<br> 
+                            (with Rostyslav Hryniv) </p>
+                    </div>
+                    </div>
+</div>
+
+<div class="col-lg-3">
+<div class="team-member">
+    <div class="timeline-image">
+    <img class="mx-auto rounded-circle" src="assets/images/team/maksym-vasyl.png" alt="..." />
+                    <h4>Maksym-Vasyl Tarnavskyi</h4>
+                    <p class="text-muted">UCU, Lviv<br> 
+                            (with Rostyslav Hryniv) </p>
+                    </div>
+                    </div>
+</div>
+
+
+     
+
+		 
+	
+					
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+	 	
+		 <br>
+		 
+		   <header class="page-header">
+			<h1 class="page-title">Past members</h1>
+</header>		
+			
+			 <div class="row">
+
+
+             <div class="col-lg-3">
+<div class="team-member">
+    <div class="timeline-image">
+    <img class="mx-auto rounded-circle" src="assets/images/team/rieli.png" alt="..." />
+                    <h4>Rieli dos Santos</h4>
+                    <p class="text-muted">MSc student (MITACS)<br> 
+                      Quantum Information Theory<br></p>
+                    </div>
+                    </div>
+</div>
+
+
+<div class="col-lg-3">
+<div class="team-member">
+    <div class="timeline-image">
+    <img class="mx-auto rounded-circle" src="assets/images/team/katarine.jpeg" alt="..." />
+                    <h4>Katarine Domingues</h4>
+                    <p class="text-muted">Visiting Undergraduate student<br> 
+                      Mathematics<br></p>
+                    </div>
+                    </div>
+
+
+</div>
+<div class="row">
+
+ 	<div class="col-lg-3">
+                        <div class="team-member">
+                            <div class="timeline-image">
+                            <img class="mx-auto rounded-circle" src="assets/images/team/BeatriceAresi.png" alt="..." />
+                            <h4>Beatrice Aresi</h4>
+                            <p class="text-muted">Undergraduate student (Fields)<br> 
+                            Optimal Transport </p>
+                        </div>
+                    </div>
+                    </div>
+                  
+
+                            
+         
+
+
+        <div class="col-lg-3">
+                  <div class="team-member">
+<div class="timeline-image">
+<img class="mx-auto rounded-circle" src="assets/images/team/cedricb.jpg" alt="..." />
+                    <h4>Cédric Bierlaire</h4>
+                    <p class="text-muted">Undergraduate student<br> 
+                      Mathematics of Machine Learning</p>
+                    </div>
+                    </div>
+				</div>
+
+
+
+				<div class="col-lg-3">
+                  <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/images/team/mariascapin.jpeg" alt="..." />
+                    <h4>Maria Gabriela Scapin</h4>
+                    <p class="text-muted">Undergraduate student (Fields)<br> 
+                      OT &amp; Machine Learning</p>
+                    </div>
+                    </div>
+		 
+
+
+
+	 <div class="col-lg-3">
+                  <div class="team-member">
+					   <div class="timeline-image">
+                            <img class="mx-auto rounded-circle" src="assets/images/team/do.png" alt="..." />
+                    <h4>Dohyoung Ko</h4>
+                    <p class="text-muted">Undergraduate student (Fields) <br> 
+                     Quantum Optimal Transport</p>
+                    </div>
+                    </div>
+					</div>
+
+
+
+
+
+		  <div class="col-lg-3">
+<div class="team-member">
+    <div class="timeline-image">
+    <img class="mx-auto rounded-circle" src="assets/images/team/anray.jpg" alt="..." />
+                    <h4>Anray Liu</h4>
+                    <p class="text-muted">Undergraduate student<br> 
+                      Scientific Computing<br></p>
+                    </div>
+                    </div>
+</div>
+
+
+ 	
+ 
+ 			  <div class="col-lg-3">
+<div class="team-member">
+    <div class="timeline-image">
+    <img class="mx-auto rounded-circle" src="assets/images/team/melissaj.png" alt="..." />
+                    <h4>Melissa Junqueira</h4>
+                    <p class="text-muted">Undergraduate student (Fields)<br> 
+                      Scientific Computing<br></p>
+                    </div>
+                    </div>
+</div>
+
+
+</div>
+
+
+ 
+
+<div class="row">
+
+	 <div class="col-lg-3">
+                  <div class="team-member">
+					   <div class="timeline-image">
+                            <img class="mx-auto rounded-circle" src="assets/images/team/bombadil.png" alt="..." />
+                    <h4>Vitalii Bielievtsov</h4>
+                    <p class="text-muted">MSc student&nbsp;&nbsp; <br> 
+                      DTI &amp; AI</p>
+                    </div>
+                    </div>
+					</div>
+					
+
+				<div class="col-lg-3">
+                  <div class="team-member">
+<div class="timeline-image">
+             <img class="mx-auto rounded-circle" src="assets/images/team/valeriia.jpg" alt="..." />
+                    <h4>Valeria Kolesnik</h4>
+                    <p class="text-muted">MSc student (with Prof. S. Schillo)&nbsp; <br> 
+                      DTI &amp; Data Sciences</p>
+                    </div> 
+					</div>
+</div>
+
+ 
+
+
+
+<div class="col-lg-3">
+<div class="team-member">
+    <div class="timeline-image">
+    <img class="mx-auto rounded-circle" src="assets/images/team/nikita.jpg" alt="..." />
+                    <h4>Nikita Davydov</h4>
+                    <p class="text-muted">MSc student, MITACS<br> 
+                      Computer Science, Kharkiv<br>(with Prof. F. Gentile)</p>
+                    </div>
+                    </div>
+</div>
+
+
+
+
+<div class="col-lg-3">
+                            <div class="team-member">
+                            <div class="timeline-image">
+                            <img class="mx-auto rounded-circle" src="assets/images/team/emanuele.jpg" alt="..." />
+                            <h4>Emanuele Caputo</h4>
+                          <p class="text-muted">Postdoctoral Researcher<br>
+ Mathematics </p>
+                        </div>
+                        </div>
+                    </div>
+
+
+
+</div>
+<div class="row">
+
+			<div class="col-lg-3">
+                        <div class="team-member">
+                            <div class="timeline-image">
+                            <img class="mx-auto rounded-circle" src="assets/images/team/dima.jpg" alt="..." />
+                            <h4>Dmitry Evdokimov</h4>
+                            <p class="text-muted">PhD student (Withdraw) <br> 
+                            AI for Science </p>
+                        </div>
+                    </div>
+                    </div>
+
+
+	 <div class="col-lg-3">
+                      <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/images/team/annina.png" alt="..." />
+                        <h4>Annina Lieberherr</h4>
+                        <p class="text-muted">Visiting PhD student  <br> 
+                          Chemistry, Oxford (UK)</p>
+                        </div>
+                    </div>
+
+
+
+                    
+   
+
+
+
+
+
+
+             <div class="col-lg-3">
+                        <div class="team-member">
+                            <div class="timeline-image">
+                            <img class="mx-auto rounded-circle" src="assets/images/team/olivia.png" alt="..." />
+                            <h4>Olivia Green</h4>
+                            <p class="text-muted">BSc student, MITACS<br> 
+                            Mathematics, Nottingham (UK) </p>
+                        </div>
+                    </div>
+                    </div>
+
+
+  <div class="col-lg-3">
+                        <div class="team-member">
+                            <div class="timeline-image">
+                            <img class="mx-auto rounded-circle" src="assets/images/team/rebecca.jpg" alt="..." />
+                            <h4>Rebecca Mulder</h4>
+                             <p class="text-muted">BSc student, UNB<br> 
+                            Chemistry, New Brunswick<br>(with Prof. S. De Baerdemacker) </p>              
+   			</div>
+                    	</div>
+                    </div>
+
+</div>
+<div class="row">
+
+ <div class="col-lg-3">
+                            <div class="team-member">
+                            <div class="timeline-image">
+                            <img class="mx-auto rounded-circle" src="assets/images/team/bombadil.png" alt="..." />
+                            <h5>Adolfo Vargas-Jiménez</h5>
+                          <p class="text-muted">Postdoctoral Researcher (2022/23)<br>
+ Mathematics </p>
+                        </div>
+                        </div>
+                    </div>
+
+
+			 
+                      <div class="col-lg-3">
+                             <div class="team-member">
+                            <div class="timeline-image">
+							<a href="https://sites.google.com/view/marcocaroccia" target="_new"><img class="mx-auto rounded-circle" src="assets/images/team/caroccia.jpg" alt="..." /></a>
+                            <h4>Marco Caroccia</h4>
+                            <p class="text-muted"> Visiting professor (2023)<br> 
+                          Politecnico di Milano</p>
+                        </div>
+                    </div>
+					</div>
+
+
+
+
+       
+
+
+
+
+                    <div class="col-lg-3">
+                             <div class="team-member">
+                            <div class="timeline-image">
+							<a href="hthttp://oliver-tse.site/" target="_new"><img class="mx-auto rounded-circle" src="assets/images/team/tse.jpg" alt="..." /></a>
+                            <h4>Oliver Tse</h4>
+                            <p class="text-muted"> Visiting professor (2023)<br> 
+                          TU/e, Netherlands</p>
+                        </div>
+                    </div>
+		</div>
+                    
+        
+             <div class="col-lg-3">
+                      <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/images/team/fanch.jpg" alt="..." />
+                        <h4>Fanch Coudreuse</h4>
+                        <p class="text-muted">Visiting PhD student (2023) <br> 
+                          Mathematics, ENS-Lyon</p>
+                        </div>
+                    </div>
+
+</div>
+
+<div class="row">
+
+<div class="col-lg-3">
+                        <div class="team-member">
+                          <div class="timeline-image">
+						     <img class="mx-auto rounded-circle" src="assets/images/team/daniel.jpg" alt="..." />
+							  <h4>Daniel Calero</h4>
+                            <p class="text-muted">Undergraduate, MITACS (2022)<br>
+                          Physics, U. del Valle (Colombia)</p>
+						</div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-lg-3">
+                        <div class="team-member">
+                             <img class="mx-auto rounded-circle" src="assets/images/team/ben.jpg" alt="..." />
+							<h4>Ben Langton</h4>
+                          <p class="text-muted">Undergraduate, MITACS (2022)<br>
+                            Mathematics, Durham (UK)</p>
+                      </div>
+                    </div>
+
+
+
+
+      
+					 
+
+
+
+              <div class="col-lg-3">
+                        <div class="team-member">
+                             <img class="mx-auto rounded-circle" src="assets/images/team/akshay.jpg" alt="..." />
+							<h4>Akshay Raman</h4>
+                            <p class="text-muted">Undergraduate, MITACS (2022) <br> 
+                          Computer Sciences, VIT (India)</p>
+                       
+                      </div>
+				 </div>
+
+<div class="col-lg-3">
+                       <div class="team-member">
+                          <img class="mx-auto rounded-circle" src="assets/images/team/liam.jpg" alt="..." />
+						   <h4>Liam Meades</h4>
+                         <p class="text-muted"> Volunteer student (2022)<br> 
+                         Quantum Chemistry</p>
+                       </div>
+                    </div>
+
+</div>
+
+
+
+		 <!--
+		 
+                    <div class="col-lg-3">
+                        <div class="team-member">
+							<img class="mx-auto rounded-circle" src="assets/images/team/daniel.jpg" alt="..." />
+                            <h4>Daniel Calero</h4>
+                            <p class="text-muted">Undergraduate, MITACS<br>
+                          Physics, U. del Valle (Colombia)</p>
+                        </div>
+                    </div>
+ <div class="row">	
+                    <div class="col-lg-3">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/images/team/ben.jpg" alt="..." />
+                            <h4>Ben Langton</h4>
+                          <p class="text-muted">Undergraduate, MITACS <br>
+                            Mathematics, Durham (UK)</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/images/team/akshay.jpg" alt="..." />
+                            <h4>Akshay Raman</h4>
+                            <p class="text-muted">Undergraduate, MITACS <br> 
+                          Computer Sciences, VIT (India)</p>
+                      </div>
+                    </div>
+	                 </div>
+					<div class="row">
+					 <div class="col-lg-3">
+                       <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/images/team/liam.jpg" alt="..." />
+                         <h4>Liam Meades</h4>
+                         <p class="text-muted"> Summer intern<br> 
+                         Chemistry, uOttawa</p>
+                       </div>
+                    </div>        -->               
+                    </div>
+
+                
+				
+<header class="page-header">
+			<h1 class="page-title">Research interests</h1>
+</header>
+                
+ <p>Calculus of Variations,<br>
+ Optimal Transport,<br>
+ Gradient Flows in the space of probability measures,<br>
+ Numerical methods and approximation,<br>
+ Theoretical and Computational Chemistry,<br>
+	 	 &emsp13;&emsp13;<i>- Density Functional Theory</i><br>
+	 &emsp13;&emsp13;<i>- One-body Reduced Density Matrix Theory</i><br>
+ Mathematical Aspects of Machine learning theory<br>
+	 &emsp13;&emsp13;<i>- Likelihood-free Variational Inference and Generative Modelling</i><br>
+	 &emsp13;&emsp13;<i>- Normalizing flows</i><br>
+	 &emsp13;&emsp13;<i>- Generative Adversarial Networks</i><br>
+	 &emsp13;&emsp13;<i>- Statistical Learning Theory</i><br>
+ </p>  
+ <h3> Brief Research Description </h3>
+ <br><br>
+              <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="assets/images/research/5.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <p class="subtitle">Calculus of Variations</p>
+                                </div>
+                              <div class="timeline-body">
+                                    <p class="text-muted">We are interested in fundamental theory and computational algorithms for multi-marginal optimal transport. Examples where our methodology is applied include Wasserstein Barycenters, Mean-Field games and Trajectory Inference in Biology. We also develop tools to improve the understanding of density estimation and generation in GANs, VAEs, Flow and Diffusion-based Generative Models. <br></p>
+                                  
+</div>&nbsp; </p>
+                          </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="assets/images/research/2.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading" align="left">
+                                  <p class="subtitle" align="left">Quantum Chemistry</p>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted"> The focus of our current research is to extend the accuracy of electronic Density Functional Theory (DFT) to systems in which electronic correlation plays a prominent role. In particular using the Stricly Correlated Electron (SCE) formalism in the study of ground state properties of many-electrons system (existence and next-order corrections of SCE DFT) and time-dependent DFT (1d). Another research line focus in extending the accuracy of electronic Density Functional Theory (DFT) to systems in which electronic correlation plays a prominent role. In particular using machine learning methods and the SCE formalism to help in the construction of improved approximate functionals.
+                                    </p>
+                                  
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="assets/images/research/3.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                     <p class="subtitle">Mathematics of Machine Learning
+                                        and AI for Chemistry</p>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">
+									We are developing tools to improve the understanding of density estimation and generation in GANs, VAES and Normalizing Flows; and developing novel deep learning methods for Computational Chemistry.        
+                                    </p>
+                               
+                        </li>
+                    </ul>
+</div>
+    <br>
+              <h3> Collaborators and Mentors </h3>
+ <br>
+			<article class="post"> 
+ <table width="60%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td colspan="2"><div id="chart-container" align="center">FusionCharts will render here</div></td>
+    </tr>
+  <tr>
+    <td><p><a href="https://people.dm.unipi.it/buttazzo/" target=_new>Hilke Bahmann</a> (Chemistry, Wuppertal)<br> 
+	<a href="https://people.dm.unipi.it/buttazzo/" target=_new>Giuseppe Buttazzo</a> (Pisa, Ph.D. advisor)<br> 
+    Simone Di Marino (Math, Genoa)<br> 
+    Dario Feliciangeli (Math, IST-Austria)<br> 
+    <a href="https://cfinlay.github.io/" target=_new>Chris Finlay </a> (AI, McGill &amp; Deep Render)<br><a href="https://www-m7.ma.tum.de/bin/view/Analysis/GeroFriesecke" target=_new>Gero Friesecke </a> (Math/Chemistry, TU Munich)<br> <a href="https://few.vu.nl/~kjgiesbe/" target=_new>Klaas Giesbertz </a> (Chemistry, Amsterdam)<br> Juri Grossi (Chemistry, UC Merced) <br> <a href="https://paolagorigiorgi.org/" target=_new>Paola Gori-Giorgi</a> (Chemistry, Amsterdam)<br> 
+	Timothy J. Daas (Chemistry, Amsterdam)<br>
+    Anna Kausamo (Math, Firenze)<br> 
+    <a href="https://sites.google.com/view/antonmallasto/home" target=_new> Anton Mallasto </a> (AI, SILO.AI)<br></p></td>
+    <td><p><a href="https://www.haquangminh.info/" target=_new> Ha Quang Minh </a> (AI, RIKEN-AIP)<br>
+	<a href="https://personal-homepages.mis.mpg.de/montufar/" target=_new> Guido Montúfar </a> (AI, UCLA & MPI)<br> 
+    <a href="https://lucanenna.github.io/" target=_new>Luca Nenna</a> (Math, Paris-Orsay)<br> 
+    <a href="https://sites.google.com/site/mircpetrache/home" target=_new>Mircea Petrache</a> (Math, PUC Chile)<br> 
+    <a href="https://apooladian.github.io/" target=_new>Aram Pooladian</a> (AI, New York)<br>
+    <a href="http://pub.ist.ac.at/~lportina/" target=_new>Lorenzo Portinale</a> (Math, Bonn)<br> 
+    <a href="https://users.jyu.fi/~tamaraja/" target=_new>Tapio Rajala</a> (Math, Jyväskylä)<br>  Michael Seidl (Physics, Regensburg)<br>  <a href="https://users.jyu.fi/~roleeuwe/intro.html" target=_new>Robert van Leeuwen</a> (Physics, Jyväskylä)<br> 
+    <a href="https://www.velichkov.it/" target=_new>Bozhidar Velichkov</a> (Math, Pisa)<br> 
+	Stefan Vuckovic (Chemistry, Lecce &amp; Amsterdam)<br> 
+    <a href="https://www.maths.bath.ac.uk/~jz203/" target=_new>Johannes Zimmer</a>  (Math, Bath).</p></td>
+  </tr>
+</table>
+
+    
+  
+   
+            
+  </article>
+			<!-- /Article -->
+            
+            
+	</div>
+	</div>	<!-- /container -->
+	
+</main>
+<footer id="footer" class="topspace">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 widget">
+				<h3 class="widget-title">Contact</h3>
+						<div class="widget-body">
+					<p>Department of Chemistry and Biomolecular Sciences<br>
+				Department of Mathematics and Statistics<br>
+				STEM building, Room 357 <br>
+		        Faculty of Sciences <br>
+				University of Ottawa<br>
+                150 Louis-Pasteur Pvt <br>
+				Ottawa, ON, Canada K1N 6N5<br>
+				</div>
+		
+			</div>
+
+			<div class="col-md-3 widget">
+				<h3 class="widget-title">Follow me</h3>
+				<div class="widget-body">
+					<p class="follow-me-icons">
+						<a href=""><i class="fa fa-twitter fa-2"></i></a>
+						<a href=""><i class="fa fa-dribbble fa-2"></i></a>
+						<a href=""><i class="fa fa-github fa-2"></i></a>
+					</p>
+				</div>
+			</div>
+
+		  <div class="col-md-5 widget">
+			 	<div class="widget-body"><span class="entry-content"><a href=""><font color="#000000"><img src="assets/images/uottawa.png" alt="" width="320" height="86"  align="center"/></font></a></span></div>
+			</div>
+
+
+		</div> <!-- /row of widgets -->
+	</div>
+</footer>
+
+<footer id="underfooter">
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-md-6 widget">
+				<div class="widget-body">
+					<p></p>
+				</div>
+			</div>
+
+			<div class="col-md-6 widget">
+				<div class="widget-body">
+					<p class="text-right">
+						Copyright &copy; 2017, Augusto Gerolin<br> 
+						Design: <a href="https://www.gettemplate.com" rel="designer">Initio by GetTemplate</a> </p>
+				</div>
+			</div>
+
+		</div> <!-- /row of widgets -->
+	</div>
+</footer>
+
+
+<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="assets/js/template.js"></script>
+</body>
+</html>

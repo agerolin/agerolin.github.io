@@ -1,0 +1,529 @@
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112073692-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-112073692-1');
+</script>
+<style>
+body {
+  font-family: Open sans, Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 40px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 900px;
+}
+
+/* The Close Button */
+.closebtn {
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.closebtn:hover {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Open sans, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+	vertical-align: middle;
+    position: absolute;
+    bottom: -5;
+    background: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+    color: #f1f1f1;
+    width: 100%;
+    padding: 10px;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+
+
+</style>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+	
+	<title>AI and Quantum @uOttawa</title>
+
+	<link rel="shortcut icon" href="assets/images/topicon.png">
+	
+	<!-- Bootstrap -->
+	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+    
+	<!-- Icon font -->
+	<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<!-- Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
+	<!-- Custom styles -->
+	<link rel="stylesheet" href="assets/css/styles.css">
+
+	<!--[if lt IE 9]> <script src="assets/js/html5shiv.js"></script> <![endif]-->
+</head>
+<body>
+
+<header id="header">
+	<div id="head" class="parallax" parallax-speed="1">
+				<h1 id="logo" class="text-center">
+             <span class="title">AI and Quantum</span>
+			<span class="tagline">at the interface of Chemistry and Mathematics</span>
+		</h1>
+	</div>
+
+<link rel="stylesheet" href"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script>
+function sortResults(prop, asc) {
+    pk = pk.sort(function(a, b) {
+        if (asc) {
+            return (a[prop] > b[prop]) ? 1 : ((a[prop] < b[prop]) ? -1 : 0);
+        } else {
+            return (b[prop] > a[prop]) ? 1 : ((b[prop] < a[prop]) ? -1 : 0);
+        }
+    });
+    
+	showResults();
+	}
+
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+</head>
+	<nav class="navbar navbar-default navbar-sticky">
+		<div class="container-fluid">
+			
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			</div>
+			
+			<div class="navbar-collapse collapse">
+				
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+                    <li><a href="research.php">Research</a></li>
+                    <li><a href="teaching.html">Teaching</a></li>
+                     <li><a href="papers.php">Papers</a></li>
+                    <li><a href="outreach.html">Outreach Sciences</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+				</ul>
+			
+			</div><!--/.nav-collapse -->			
+		</div>	
+	</nav>
+</header>
+
+<main id="main">
+
+	<div class="container">
+
+		<div class="row topspace">
+			
+
+			<!-- Article main content -->
+			<article class="col-sm-9 maincontent">
+<header class="page-header">
+			<h1 class="page-title">Outreach Mathematics &amp; Sciences</h1>
+				</header>
+     
+ <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="73%">           
+ <p class="text">We work with <a href="https://www.jyu.fi/maths/henkilosto/akkinen-tuomo" target="new">Tuomo Äkkinen </a> and <a href="https://users.jyu.fi/~vikakivi/" target="_blank"> Ville Kivioja </a> (University of Jyväskylä) on the Mathematical Education project <a href="https://jyu.fi/somath" target="_blank"> Signs of Mathematics</a>. <br><br>
+ 
+The main goals of Signs of Mathematics are to make accessible to the public some modern aspects of mathematical research and to build bridges between the university, schools, and society via a wider understanding of mathematics. <br><br></p>
+</td>
+    <td> <div align="right"><a href="https://jyu.fi/somath" target="_blank"><img src="somath/images/logo.png" width="250" height="180"  alt=""/></a></div></td>
+  </tr>
+</table>
+<br>
+<div class="row">
+  <div class="column">
+    <img src="portfolio/thumbnails/1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="portfolio/thumbnails/2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="portfolio/thumbnails/3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="portfolio/thumbnails/4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+      
+      <div id="myModal" class="modal">
+  <span class="closebtn cursor" onclick="closebtnModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="portfolio/fullsize/1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="portfolio/fullsize/2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="portfolio/fullsize/3.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="portfolio/fullsize/4.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="portfolio/fullsize/1.jpg" style="width:70%" onclick="currentSlide(1)" alt="Exhibition Effetto Farfalla, Pisa 2012: Lorenz Water Wheel (pic: Simone Bastreghi).">
+
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="portfolio/fullsize/2.jpg" style="width:70%" onclick="currentSlide(2)" alt="School Visits at our exhibitions (pic: Foucault Pendulum replica).">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="portfolio/fullsize/3.jpg" style="width:70%" onclick="currentSlide(3)" alt="Galton Board at Jyväskylä Researchers' Night 2018 (pic: Terhi Moisala).">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="portfolio/fullsize/4.jpg" style="width:70%" onclick="currentSlide(4)" alt="Seminar on E. Lorenz's work.">
+    </div>
+  </div>
+</div>
+
+      
+<script>
+function myFunction() {
+    var myWindow = window.open("portfolio/videogalton.html", "", "width=450,height=250");
+}
+</script>
+
+      
+ <h3> <br> Past activities </h3><br>
+ <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="97%"><p><img src="assets/images/outreach_ernjkl.jpg" alt=""/>
+      <p class="subtitle">Jyväskylä Researchers' Night &nbsp;  <img src="assets/icon/contact_flaguk.png"  alt=""/></p> 
+        <p class="subsubtitle">in the framework of European Resarchers' Night</p>
+      <p class="text">Together with Ville Kivioja and Terhi Moisala, we presented some features of 
+        the Galton Board (see a <a onClick="myFunction()" style="cursor: pointer; cursor: hand;">video</a>, 2017). In 2018, we innaugurated the first part of a Maths&amp;Sciences exhibition in Jyväskylä (<a href="https://jyu.fi/somath" target="_blank">Signs of Mathematics</a>). <br></p>
+    </td>
+    <td width="3%">&nbsp;</td>
+  </tr>
+</table>
+<br>         
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="73%"><p class="subtitle">Effetto Farfalla  &nbsp;<img src="assets/icon/contact_flagitaly.png"  alt=""/></p>
+      <p class="subsubtitle">(in english: Butterfly Effect) <br>
+      in collaboration with La Limonaia (Pisa)</p>
+ <script>
+function myFunctionWheel() {
+    var myWindow = window.open("portfolio/videomulino.html", "", "width=450,height=250");
+}
+</script>
+     
+      <p class="text">Exhibition and talk about Chaos Theory and Dynamical Systems.<br>
+ 		Presented in several places, including the <a href="https://www.festivalscienza.it/site/home.html" target="new">Festival della Scienza<br> di Genova </a> (2012) and La Limonaia Pisa (April, 2012).</p></td>
+    <td> <img src="assets/images/outreach_lalimonaia.gif" width="196" height="156"  alt=""/></td>
+  </tr>
+</table>
+<br>
+<table width="100%" border="0" cellspacing="3" cellpadding="0">
+  <tr>
+    <td width="95%"><p class="subtitle">Un Promenade en Mecanique Quantique &nbsp;<img src="assets/icon/contact_flagfrance.png"  alt=""/></p>
+      <p class="subsubtitle">(in english: A walk tour around Quantum Mechanics) <br>
+      in collaboration with CCSTI (Lyon)</p>
+      <p class="text">Together with (the amazing) Audrey Savre, we lead a Outreach project around Quantum Mecanics. <br>
+      This project was part of the <em>&quot;Faites Tourner la Science&quot;</em> and <em>&quot;Fete de la Science&quot;</em> (2010) in Lyon. </p><br>
+      <img src="assets/images/outreach_ccsti.jpg" width="86" height="71"  alt=""/>&nbsp;&nbsp;<img src="assets/images/outreach_unilyon.png" width="238" height="105"  alt=""/></p>      </td>
+    <td width="5%">&nbsp;</td>
+  </tr>
+</table>
+<br>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="73%"><p class="subtitle">Matemateca &nbsp;<img src="assets/icon/contact_flagbrazil.png"  alt=""/></p>
+      <p class="subsubtitle">University of São Paulo</p>
+<p class="text">As an undergraduate student, Augusto Gerolin (AG) took part as a tutor in the great <em>Matemateca</em>. <br><i>Matemateca</i> was idealized by <a href="https://www.ime.usp.br/~colli/" target="_new">Eduardo Colli</a> (University of São Paulo) and nowadays has a lot of collaborators. See some <a href="https://www.flickr.com/photos/matemateca2/" target="_new">pictures</a> and visit the official <a href="https://www.ime.usp.br/~matemateca/" target="_new">website</a> (<em>in portuguese</em>). </p></td>
+    <td> <img src="assets/images/outreach_matemateca.jpg" alt=""/></td>
+  </tr>
+</table>
+<br>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="73%" height="217"><p class="subtitle"> A Janela de Euclides - Leonard Mlodinow</p>
+          <p class="subsubtitle">(book, original title: Euclid's Window)</p>
+        <p class="text">AG was the proofreading of the portuguese translation of the beautiful and delighting book <a href="https://books.google.it/books/about/Euclid_s_Window.html?id=zLxBOJ7e5NwC&redir_esc=y" target="_new"> Euclid's Windows: The Story of Geometry from Parallel Lines to Hyperspace</a>,
+        written by <a href="https://leonardmlodinow.com/" target="_new">Leonard Mlodinow</a> and published by <a href="https://www.geracaobooks.com.br/releases/janela.php" target="_new">Geração Editorial</a>. <br>
+        <br>
+        See all books and movies made by <a href="https://leonardmlodinow.com/leonard-mlodiinow-books/" target="_new">Leonard Mlodinow</a>.</p></td>
+    <td> <img src="assets/images/outreach_euclid.jpg" alt=""/></td>
+  </tr>
+</table>
+   
+            
+            	</article>
+			<!-- /Article -->
+            
+            
+	</div>
+	</div>	<!-- /container -->
+	
+</main>
+<footer id="footer" class="topspace">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 widget">
+				<h3 class="widget-title">Contact</h3>
+						<div class="widget-body">
+					<p>Department of Chemistry and Biomolecular Sciences<br>
+				Department of Mathematics and Statistics<br>
+				STEM building, Room 357 <br>
+		        Faculty of Sciences <br>
+				University of Ottawa<br>
+                150 Louis-Pasteur Pvt <br>
+				Ottawa, ON, Canada K1N 6N5<br>
+				</div>
+		
+			</div>
+
+			<div class="col-md-3 widget">
+				<h3 class="widget-title">Follow me</h3>
+				<div class="widget-body">
+					<p class="follow-me-icons">
+						<a href=""><i class="fa fa-twitter fa-2"></i></a>
+						<a href=""><i class="fa fa-dribbble fa-2"></i></a>
+						<a href=""><i class="fa fa-github fa-2"></i></a>
+					</p>
+				</div>
+			</div>
+
+		  <div class="col-md-5 widget">
+			 	<div class="widget-body"><span class="entry-content"><a href=""><font color="#000000"><img src="assets/images/uottawa.png" alt="" width="320" height="86"  align="center"/></font></a></span></div>
+			</div>
+
+
+		</div> <!-- /row of widgets -->
+	</div>
+</footer>
+
+<footer id="underfooter">
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-md-6 widget">
+				<div class="widget-body">
+					<p></p>
+				</div>
+			</div>
+
+			<div class="col-md-6 widget">
+				<div class="widget-body">
+					<p class="text-right">
+						Copyright &copy; 2017, Augusto Gerolin<br> 
+						Design: <a href="https://www.gettemplate.com" rel="designer">Initio by GetTemplate</a> </p>
+				</div>
+			</div>
+
+		</div> <!-- /row of widgets -->
+	</div>
+</footer>
+
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closebtnModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+
+<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="assets/js/template.js"></script>
+</body>
+</html>

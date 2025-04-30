@@ -83,7 +83,7 @@ MathJax.Hub.Config({
 				<ul class="nav navbar-nav">
 					<li><a href="index.html">Home</a></li>
                     <li><a href="research.html">Research</a></li>
-					<li><a href="research.html">Team</a></li>
+					<li><a href="team.html">Team</a></li>
                     <li><a href="teaching.html">Teaching</a></li>
                      <li><a href="papers.html">Papers</a></li>
                     <li><a href="outreach.html">Outreach</a></li>
@@ -108,56 +108,12 @@ MathJax.Hub.Config({
 			<h1 class="page-title">Publications</h1>
 				</header>
                 
-				<div id="cvgmt-papers">
-					<p>Loading papers from CVGMT...</p>
-				  </div>
-				  
-				  <script>
-					fetch('https://cvgmt.sns.it/api/papers/?authors__lastname=Gerolin&format=json')
-					  .then(response => response.json())
-					  .then(data => {
-						const container = document.getElementById('cvgmt-papers');
-						const results = data.results;
-				  
-						if (!results.length) {
-						  container.innerHTML = "<p><br><span class='text-faded'>Soon preprints will be available in this space.</span><br><br></p>";
-						  return;
-						}
-				  
-						container.innerHTML = `<p>We would like to warmly thank the <a href="https://cvgmt.sns.it/credits/" target="_blank">CVGMT Team</a> for the support and for hosting the following papers at <a href="https://cvgmt.sns.it/" target="_blank">CVGMT</a> server.</p><br>`;
-						
-						results.forEach((paper, i) => {
-						  const bgColor = i % 2 === 0 ? '#FFFFFF' : '#fcebd9';
-						  const journal = paper.journal ? `, &nbsp;<span style="color:#000000;">${paper.journal}</span>&nbsp;&nbsp;` : ", &nbsp; pre-print";
-				  
-						  const authors = paper.authors
-							.filter(author => author.lastname !== "Gerolin")
-							.map(author => `${author.firstname[0]}. ${author.lastname}`)
-							.join(', ');
-				  
-						  const title = paper.title;
-						  const year = paper.year;
-						  const id = paper.id;
-				  
-						  const paperHTML = `
-							<div style="background-color:${bgColor}; padding: 10px;">
-							  <p style="color:#2c0070;"><b>[${i + 1}]</b> ${title} (${year})</p>
-							  <i>(with <span style="color:#606060;">${authors}</span>)</i>
-							  ${journal}
-							  <a href="https://cvgmt.sns.it/paper/${id}/" target="_blank">
-								<i class="fa fa-external-link-square"></i>
-							  </a>
-							</div><br>
-						  `;
-				  
-						  container.innerHTML += paperHTML;
-						});
-					  })
-					  .catch(err => {
-						console.error("Error fetching data from CVGMT:", err);
-						document.getElementById('cvgmt-papers').innerHTML = "<p>Unable to load publications at this time.</p>";
-					  });
-				  </script>
+				
+				We would like to warmly thanks the <a href="https://cvgmt.sns.it/credits/" target="_blank">CVGMT Team</a> for the support and for hosting the following papers at <a href="https://cvgmt.sns.it/" target="_blank">CVGMT</a> server.<br><br><font color="#2c0070"><b>[1]</b>&nbsp;Quantum optimal transport with convex regularization (2024)</font><br> <i>(with <font color="#606060">E. Caputo</font>, <font color="#606060">N. Monina</font>, <font color="#606060">L. Portinale</font>)</i>, &nbsp; pre-print <a href="https://cvgmt.sns.it/paper/6762/" target="_blank"> <i class="fa fa-external-link-square"></i></a> <br><br><font color="#2c0070"><b>[2]</b>&nbsp;Existence and uniqueness of Monge minimizers for a Multi-marginal
+					Optimal Transport problem with intermolecular interactions cost (2024)</font><br> <i>(with , <font color="#606060">M. Petrache</font>, <font color="#606060">A. Vargas-Jimenez</font>)</i>, &nbsp; pre-print <a href="https://cvgmt.sns.it/paper/6361/" target="_blank"> <i class="fa fa-external-link-square"></i></a> <br><br><font color="#2c0070"><b>[3]</b>&nbsp;Non-commutative Optimal Transport for semi-definite positive matrices (2023)</font><br> <i>(with , <font color="#606060">N. Monina</font>)</i>, &nbsp; pre-print <a href="https://cvgmt.sns.it/paper/6437/" target="_blank"> <i class="fa fa-external-link-square"></i></a> <br><br><font color="#2c0070"><b>[4]</b>&nbsp;Universal diagonal estimates for minimizers of the Levy-Lieb functional (2023)</font><br> <i>(with <font color="#606060">S. Di Marino</font>, <font color="#606060">L. Nenna</font>)</i>, &nbsp;<font color="#000000">Letters in Mathematical Physics</font> &nbsp;&nbsp; <a href="https://cvgmt.sns.it/paper/5924/" target="_blank"> <i class="fa fa-external-link-square"></i></a> <br><br><font color="#2c0070"><b>[5]</b>&nbsp;A Non-Commutative Entropic Optimal Transport Approach to Quantum  Composite Systems at Positive Temperature (2023)</font><br> <i>(with <font color="#606060">D. Feliciangeli</font>, <font color="#606060">L. Portinale</font>)</i>, &nbsp;<font color="#000000">Journal of Functional Analysis</font> &nbsp;&nbsp; <a href="https://cvgmt.sns.it/paper/5178/" target="_blank"> <i class="fa fa-external-link-square"></i></a> <br><br><font color="#2c0070"><b>[6]</b>&nbsp;Density Functionals based on the mathematical structure of the
+					strong-interaction limit of DFT (2022)</font><br> <i>(with <font color="#606060">H. Bahmann</font>, <font color="#606060">G. Friesecke</font>, <font color="#606060">P. Gori-Giorgi</font>, <font color="#606060">. Timothy J. Daas</font>, <font color="#606060">S. Vuckovic</font>)</i>, &nbsp; pre-print <a href="https://cvgmt.sns.it/paper/5528/" target="_blank"> <i class="fa fa-external-link-square"></i></a> <br><br><font color="#2c0070"><b>[7]</b>&nbsp;The strong-interaction limit of density functional theory (2022)</font><br> <i>(with <font color="#606060">G. Friesecke</font>, <font color="#606060">P. Gori-Giorgi</font>)</i>, &nbsp; pre-print <a href="https://cvgmt.sns.it/paper/5453/" target="_blank"> <i class="fa fa-external-link-square"></i></a> <br><br><font color="#2c0070"><b>[8]</b>&nbsp;Optimal Transport losses and Sinkhorn algorithm with general convex
+					regularization (2020)</font><br> <i>(with <font color="#606060">S. Di Marino</font>)</i>, &nbsp; pre-print <a href="https://cvgmt.sns.it/paper/4730/" target="_blank"> <i class="fa fa-external-link-square"></i></a> <br><br><font color="#2c0070"><b>[9]</b>&nbsp;Learning normalizing flows from Entropy-Kantorovich potentials (2020)</font><br> <i>(with <font color="#606060">. Adam M Oberman</font>, <font color="#606060">C. Finlay</font>, <font color="#606060">A. Pooladian</font>)</i>, &nbsp; pre-print <a href="https://cvgmt.sns.it/paper/4713/" target="_blank"> <i class="fa fa-external-link-square"></i></a> <br><br><font color="#2c0070"><b>[10]</b>&nbsp;Entropy-Regularized <span class="MathJax_Preview" style="color: inherit; display: none;"></span><span id="MathJax-Element-1-Frame" class="mjx-chtml MathJax_CHTML" tabindex="0" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/math&gt;" role="presentation" style="font-size: 121%; position: relative;"><span id="MJXc-Node-1" class="mjx-math" aria-hidden="true"><span id="MJXc-Node-2" class="mjx-mrow"><span id="MJXc-Node-3" class="mjx-mn"><span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.388em; padding-bottom: 0.333em;">2</span></span></span></span><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn></math></span></span><script type="math/tex" id="MathJax-Element-1">2</script>-Wasserstein Distance between Gaussian Measures (2020)</font><br> <i>(with , <font color="#606060">. Hà Quang Minh</font>, <font color="#606060">A. Mallasto</font>)</i>, &nbsp; pre-print <a href="https://cvgmt.sns.it/paper/4699/" target="_blank"> <i class="fa fa-external-link-square"></i></a> <br><br><font color="#2c0070"><b>[11]</b>&nbsp;Kinetic correlation functionals from the entropic regularisation of the  strictly-correlated electrons problem (2020)</font><br> <i>(with , <font color="#606060">P. Gori-Giorgi</font>, <font color="#606060">J. Grossi</font>)</i>, &nbsp;<font color="#000000">J. Chem. Theory Comput.</font> &nbsp;&nbsp; <a href="https://cvgmt.sns.it/paper/4534/" target="_blank"> <i class="fa fa-external-link-square"></i></a> <br><br><font color="#2c0070"><b>[12]</b>&nbsp;Multi-marginal Entropy-Transport with repulsive cost (2020)</font><br> <i>(with , <font color="#606060">A. Kausamo</font>, <font color="#606060">T. Rajala</font>)</i>, &nbsp;<font color="#000000">Calculus of Variations and Partial Differential Equations</font> &nbsp;&nbsp; <a href="https://cvgmt.sns.it/paper/4374/" target="_blank"> <i class="fa fa-external-link-square"></i></a> <br><br><font color="#2c0070"><b>[13]</b>&nbsp;How Well Do WGANs Estimate the Wasserstein Metric? (2019)</font><br> <i>(with , <font color="#606060">A. Mallasto</font>, <font color="#606060">G. Montúfar</font>)</i>, &nbsp; pre-print <a href="https://cvgmt.sns.it/paper/4533/" target="_blank"> <i class="fa fa-external-link-square"></i></a> <br><br><font color="#2c0070"><b>[14]</b>&nbsp;An Optimal Transport approach for the Schrödinger bridge problem and
+					convergence of Sinkhorn algorithm (2019)</font><br> <i>(with <font color="#606060">S. Di Marino</font>)</i>, &nbsp; pre-print <a href="https://cvgmt.sns.it/paper/4521/" target="_blank"> <i class="fa fa-external-link-square"></i></a> <br><br><font color="#2c0070"><b>[15]</b>&nbsp;Non-existence of optimal transport maps for the multi-marginal repulsive  harmonic cost (2019)</font><br> <i>(with , <font color="#606060">A. Kausamo</font>, <font color="#606060">T. Rajala</font>)</i>, &nbsp;<font color="#000000">SIAM Journal on Mathematical Analysis</font> &nbsp;&nbsp; <a href="https://cvgmt.sns.it/paper/3865/" target="_blank"> <i class="fa fa-external-link-square"></i></a> <br><br><font color="#2c0070"><b>[16]</b>&nbsp;Duality theory for multi-marginal optimal transport with repulsive costs  in metric spaces (2019)</font><br> <i>(with , <font color="#606060">A. Kausamo</font>, <font color="#606060">T. Rajala</font>)</i>, &nbsp;<font color="#000000">ESAIM: COCV</font> &nbsp;&nbsp; <a href="https://cvgmt.sns.it/paper/3864/" target="_blank"> <i class="fa fa-external-link-square"></i></a> <br><br><font color="#2c0070"><b>[17]</b>&nbsp;The strictly-correlated electron functional for spherically symmetric systems revisited (2017)</font><br> <i>(with <font color="#606060">S. Di Marino</font>, <font color="#606060">K. Giesbertz</font>, <font color="#606060">P. Gori-Giorgi</font>, <font color="#606060">L. Nenna</font>, <font color="#606060">M. Seidl</font>)</i>, &nbsp; pre-print <a href="https://cvgmt.sns.it/paper/3646/" target="_blank"> <i class="fa fa-external-link-square"></i></a> <br><br><font color="#2c0070"><b>[18]</b>&nbsp;Optimal transportation theory for repulsive costs (2017)</font><br> <i>(with <font color="#606060">S. Di Marino</font>, <font color="#606060">L. Nenna</font>)</i>, &nbsp;<font color="#000000">Topological Optimization and Optimal Transport  In the Applied Sciences</font> &nbsp;&nbsp; <a href="https://cvgmt.sns.it/paper/2719/" target="_blank"> <i class="fa fa-external-link-square"></i></a> <br><br><font color="#2c0070"><b>[19]</b>&nbsp;The adiabatic strictly-correlated-electrons functional: kernel and exact  properties (2016)</font><br> <i>(with <font color="#606060">S. Di Marino</font>, <font color="#606060">P. Gori-Giorgi</font>, <font color="#606060">G. Lani</font>, <font color="#606060">R. van Leeuwen</font>)</i>, &nbsp;<font color="#000000">Physical Chemistry Chemical Physics</font> &nbsp;&nbsp; <a href="https://cvgmt.sns.it/paper/3866/" target="_blank"> <i class="fa fa-external-link-square"></i></a> <br><br><font color="#2c0070"><b>[20]</b>&nbsp;Optimal Potentials for Schrödinger Operators (2013)</font><br> <i>(with <font color="#606060">G. Buttazzo</font>, <font color="#606060">B. Ruffini</font>, <font color="#606060">B. Velichkov</font>)</i>, &nbsp;<font color="#000000">J. Éc. polytech. Math.</font> &nbsp;&nbsp; <a href="https://cvgmt.sns.it/paper/2140/" target="_blank"> <i class="fa fa-external-link-square"></i></a> <br><br>            
 				  
             
             	</article>
